@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Take Me Away</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+
+	<script type="text/javascript" src="scripts/script.js" defer></script>
+	<script type="text/javascript" src="scripts/html2canvas.js"></script>
+	<script type="text/javascript" src="scripts/markov.js"></script>
+	<script type="text/javascript" src="scripts/mapScript.js" async defer></script>
+
+</head>
+<body>
+    <div id="imagebox"></div>
+    <div id="style-selector-control"  class="map-control">
+      <select id="style-selector" class="selector-control">
+        <option value="default">Default</option>
+        <option value="silver">Silver</option>
+        <option value="night">Night mode</option>
+        <option value="retro" selected="selected">Retro</option>
+        <option value="hiding">Hide features</option>
+      </select>
+    </div>
+    
+
+    <!-- <button type="button">Click Me!</button> -->
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwf9ZlF4RV_CDZCfSJRQmr35lN_GoEUw0" async defer></script>
+    <div>
+        <img src="resources/car.gif" id="car" alt="car">
+        <div id="map"></div>
+        <button class="regenerate" onclick="initMap();"></button>
+        <button id="welcome"></button>
+    </div>
+
+</body>
+</html>
